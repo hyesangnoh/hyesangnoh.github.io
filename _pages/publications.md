@@ -66,21 +66,12 @@ nav_order: 3
   color: var(--global-text-color);
 }
 
-.research-year {
-  margin-top: 1.6rem;
-  margin-bottom: 0.6rem;
-  color: var(--global-text-color-light);
-  font-weight: 500;
-}
-
 .research-section {
   margin-top: 2.2rem;
 }
 </style>
 
 ## Peer-Reviewed Articles
-
-### 2026
 
 <ul class="publication-list">
   <li>
@@ -97,11 +88,7 @@ nav_order: 3
       <a href="https://doi.org/10.1111/psj.70112" target="_blank">DOI</a>
     </div>
   </li>
-</ul>
 
-### 2024
-
-<ul class="publication-list">
   <li>
     <div class="pub-title">Diversity within Universality: Explaining Pandemic Universal Cash Transfer in East Asia</div>
     <div class="pub-authors">Yun Choi, Hyesang Noh, Sanghee Han, and Ugo Gentilini</div>
@@ -116,11 +103,7 @@ nav_order: 3
       <a href="https://doi.org/10.1111/issr.12355" target="_blank">DOI</a>
     </div>
   </li>
-</ul>
 
-### 2022
-
-<ul class="publication-list">
   <li>
     <div class="pub-title">Who Spends More to Combat COVID-19 Social Risks and Why?</div>
     <div class="pub-authors">Hyesang Noh, Sanghee Han, and Yun Choi</div>
