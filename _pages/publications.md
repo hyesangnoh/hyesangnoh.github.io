@@ -7,13 +7,12 @@ nav_order: 3
 ---
 
 <style>
-
 .post-title,
 .page-title,
 h1 {
   display: none !important;
 }
-  
+
 .publication-list {
   list-style: none;
   padding-left: 0;
@@ -21,7 +20,7 @@ h1 {
 }
 
 .publication-list li {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.8rem;
 }
 
 .pub-title {
@@ -38,21 +37,26 @@ h1 {
 }
 
 .pub-links {
-  display: flex;
-  gap: 0.6rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  column-gap: 0.6rem;
+  row-gap: 0.5rem;
   align-items: baseline;
   margin-top: 0.2rem;
   font-size: 0.9rem;
 }
 
 .pub-links details {
-  display: inline-block;
+  display: contents;
 }
 
 .pub-links summary {
   display: inline;
   cursor: pointer;
   color: var(--global-theme-color);
+  list-style: none;
+  grid-column: 1;
 }
 
 .pub-links summary::-webkit-details-marker {
@@ -64,12 +68,16 @@ h1 {
 }
 
 .pub-links a {
+  grid-column: 2;
   margin-left: 0;
 }
 
 .pub-abstract {
-  margin-top: 0.5rem;
+  grid-column: 1 / -1;
+  display: block;
+  margin-top: 0.2rem;
   font-size: 0.95rem;
+  line-height: 1.55;
   color: var(--global-text-color);
 }
 
@@ -95,9 +103,11 @@ h1 {
   display: block;
   color: var(--global-text-color-light);
   text-decoration: none;
+  transition: color 0.15s ease;
 }
 
-.research-sidebar a:hover {
+.research-sidebar a:hover,
+.research-sidebar a.active {
   color: var(--global-theme-color);
 }
 
@@ -272,3 +282,38 @@ h1 {
 
   </div>
 </div>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".research-content h2[id]");
+  const navLinks = document.querySelectorAll(".research-sidebar a");
+
+  function setActiveLink() {
+    let currentSectionId = sections[0]?.id;
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+
+      if (rect.top <= 120) {
+        currentSectionId = section.id;
+      }
+    });
+
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+
+      if (href === `#${currentSectionId}`) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  }
+
+  setActiveLink();
+  window.addEventListener("scroll", setActiveLink);
+});
+</script>
+
