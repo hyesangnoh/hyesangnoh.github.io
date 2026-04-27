@@ -119,7 +119,7 @@ My research interests include the policy process and policy design, the social c
 </p>
 
 <p>
-Beyond my dissertation, I study how social policies change and how those changes generate new political dynamics. I have examined social policy changes during the pandemic, particularly the shift toward more universal cash transfer policies and their political impacts. I also study the political attitudes and behaviors that shape redistribution more broadly.
+Beyond my dissertation, I study when social policies change and how those changes generate new political dynamics. I have examined social policy changes during the pandemic, particularly the shift toward more universal social policies and their political impacts. I also study the political attitudes and behaviors that shape redistribution more broadly.
 </p>
 
 </div>
