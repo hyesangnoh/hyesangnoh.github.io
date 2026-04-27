@@ -33,6 +33,17 @@ latest_posts:
 ---
 
 <style>
+
+.intro-title {
+  clear: both;
+  margin-bottom: 1.5rem;
+}
+
+.intro-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+  
 .post-title {
   display: none;
 }
@@ -65,6 +76,18 @@ latest_posts:
 }
 </style>
 
-Welcome! I am a PhD candidate at the University at Albany, where I study public administration and policy. This website is still developing as I learn how to manage it.
+<div class="intro-title">
+  <h1>Welcome!</h1>
+</div>
 
-My research interests include the social construction of policy targets, policymaking, and the design of social policy.
+<p>
+  
+    I am a PhD candidate at the University at Albany, where I study public administration and policy. This website is still developing as I learn how to manage it.
+
+</p>
+
+<p>
+
+    My research interests include the social construction of policy targets, policymaking, and the design of social policy.
+
+</p>
