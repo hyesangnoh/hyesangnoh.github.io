@@ -6,90 +6,274 @@ nav: true
 nav_order: 3
 ---
 
-### Peer-Reviewed Articles
+<style>
+.publication-list {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+}
 
-<p><strong>Noh, H., and Fox, A.M.</strong> (2026). Can Money Buy Trust? Social Transfer and Trust during the Pandemic. <em>Policy Studies Journal</em>, preprint. <a href="https://doi.org/10.1111/psj.70112">https://doi.org/10.1111/psj.70112</a></p>
-<details>
-<summary>Abstract</summary>
+.publication-list li {
+  counter-increment: item;
+  margin-bottom: 1.2rem;
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  column-gap: 0.5rem;
+}
 
-Abstract to be added.
+.publication-list li::before {
+  content: counter(item) ".";
+  font-weight: 500;
+  color: var(--global-text-color-light);
+}
 
-</details>
-<br>
+.pub-title {
+  font-weight: 500;
+}
 
-<p><strong>Choi, Y., Noh, H., Han, S., and Gentilini, U.</strong> (2024). Diversity within Universality: Explaining Pandemic Universal Cash Transfer in East Asia. <em>International Social Security Review</em>, 77(1–2), 51–66. <a href="https://doi.org/10.1111/issr.12355">https://doi.org/10.1111/issr.12355</a></p>
-<details>
-<summary>Abstract</summary>
+.pub-authors {
+  margin-top: 0.15rem;
+}
 
-Abstract to be added.
+.pub-venue {
+  margin-top: 0.15rem;
+  color: var(--global-text-color-light);
+}
 
-</details>
-<br>
+.pub-links {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
 
-<p><strong>Noh, H., Han, S., and Choi, Y.</strong> (2022). Who Spends More to Combat COVID-19 Social Risks and Why? <em>International Journal of Social Welfare</em>, 31(4), 392–406. <a href="https://doi.org/10.1111/ijsw.12535">https://doi.org/10.1111/ijsw.12535</a></p>
-<details>
-<summary>Abstract</summary>
+.pub-links details {
+  display: inline;
+}
 
-Abstract to be added.
+.pub-links summary {
+  display: inline;
+  cursor: pointer;
+  color: var(--global-theme-color);
+}
 
-</details>
+.pub-links summary::-webkit-details-marker {
+  display: none;
+}
 
----
+.pub-links summary::marker {
+  display: none;
+}
 
-### Working Papers
+.pub-links a {
+  margin-left: 0.4rem;
+}
 
-<p><strong>Reynolds, M., Noh, H., and Riosmena, F.</strong> Immigrant Inclusion and Hispanic/Latino Health: The Moderating Role of Co-Ethnic Concentration.</p>
-<details>
-<summary>Abstract</summary>
+.pub-abstract {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--global-text-color);
+}
 
-Abstract to be added.
+.research-section {
+  margin-top: 2rem;
+}
 
-</details>
-<br>
+.research-year {
+  margin-top: 1.5rem;
+  color: var(--global-text-color-light);
+}
+</style>
 
-<p><strong>Fox, A.M., and Noh, H.</strong> ‘Universal’ Health Coverage: Does Inclusion of Divisive Groups Reduce Support for Universalistic Welfare Policy?</p>
-<details>
-<summary>Abstract</summary>
+## Peer-Reviewed Articles
 
-Abstract to be added.
+### 2026
 
-</details>
-<br>
+<ol class="publication-list">
+  <li>
+    <div>
+      <div class="pub-title">Can Money Buy Trust? Social Transfer and Trust during the Pandemic</div>
+      <div class="pub-authors">Hyesang Noh and Ashley M. Fox</div>
+      <div class="pub-venue"><em>Policy Studies Journal</em>, preprint, 2026</div>
+      <div class="pub-links">
+        <details>
+          <summary>Abs</summary>
+          <div class="pub-abstract">
+            Abstract to be added.
+          </div>
+        </details>
+        <a href="https://doi.org/10.1111/psj.70112" target="_blank">DOI</a>
+      </div>
+    </div>
+  </li>
+</ol>
 
-<p><strong>Lyon, M.A., Finger, L.K., and Noh, H.</strong> Teacher Strikes and the Demobilization of Republican Voters.</p>
-<details>
-<summary>Abstract</summary>
+### 2024
 
-Abstract to be added.
+<ol class="publication-list">
+  <li>
+    <div>
+      <div class="pub-title">Diversity within Universality: Explaining Pandemic Universal Cash Transfer in East Asia</div>
+      <div class="pub-authors">Yun Choi, Hyesang Noh, Sanghee Han, and Ugo Gentilini</div>
+      <div class="pub-venue"><em>International Social Security Review</em>, 77(1–2), 51–66, 2024</div>
+      <div class="pub-links">
+        <details>
+          <summary>Abs</summary>
+          <div class="pub-abstract">
+            Abstract to be added.
+          </div>
+        </details>
+        <a href="https://doi.org/10.1111/issr.12355" target="_blank">DOI</a>
+      </div>
+    </div>
+  </li>
+</ol>
 
-</details>
+### 2022
 
----
+<ol class="publication-list">
+  <li>
+    <div>
+      <div class="pub-title">Who Spends More to Combat COVID-19 Social Risks and Why?</div>
+      <div class="pub-authors">Hyesang Noh, Sanghee Han, and Yun Choi</div>
+      <div class="pub-venue"><em>International Journal of Social Welfare</em>, 31(4), 392–406, 2022</div>
+      <div class="pub-links">
+        <details>
+          <summary>Abs</summary>
+          <div class="pub-abstract">
+            Abstract to be added.
+          </div>
+        </details>
+        <a href="https://doi.org/10.1111/ijsw.12535" target="_blank">DOI</a>
+      </div>
+    </div>
+  </li>
+</ol>
 
-### Work in Progress
+<div class="research-section"></div>
 
-<p><strong>Noh, H.</strong> How Attitudes Toward Different Welfare Policies are Shaped and Evolve. Dissertation Chapter.</p>
-<br>
+## Working Papers
 
-<p><strong>Noh, H., and Fox, A.M.</strong> Who Deserves Easier Access: Deservingness, Fiscal Constraints, and Administrative Burden for Immigrants. Dissertation Chapter.</p>
-<br>
+<ol class="publication-list">
+  <li>
+    <div>
+      <div class="pub-title">Immigrant Inclusion and Hispanic/Latino Health: The Moderating Role of Co-Ethnic Concentration</div>
+      <div class="pub-authors">Molly Reynolds, Hyesang Noh, and Fernando Riosmena</div>
+      <div class="pub-venue">R&amp;R at <em>Population Research and Policy Review</em>. Draft available upon request.</div>
+      <div class="pub-links">
+        <details>
+          <summary>Abs</summary>
+          <div class="pub-abstract">
+            Abstract to be added.
+          </div>
+        </details>
+      </div>
+    </div>
+  </li>
 
-<p><strong>Noh, H.</strong> Voice and Power in Public Charge Rulemaking Process. Dissertation Chapter.</p>
-<br>
+  <li>
+    <div>
+      <div class="pub-title">‘Universal’ Health Coverage: Does Inclusion of Divisive Groups Reduce Support for Universalistic Welfare Policy?</div>
+      <div class="pub-authors">Ashley M. Fox and Hyesang Noh</div>
+      <div class="pub-venue">Under review at <em>Journal of Public Policy</em>. Draft available upon request.</div>
+      <div class="pub-links">
+        <details>
+          <summary>Abs</summary>
+          <div class="pub-abstract">
+            Abstract to be added.
+          </div>
+        </details>
+      </div>
+    </div>
+  </li>
 
-<p><strong>Noh, H., Prince, K., and Reynolds, M.M.</strong> State-Level Public Opinion about Immigrants and the 2016 Presidential Election.</p>
-<br>
+  <li>
+    <div>
+      <div class="pub-title">Teacher Strikes and the Demobilization of Republican Voters</div>
+      <div class="pub-authors">Melissa A. Lyon, Liam K. Finger, and Hyesang Noh</div>
+      <div class="pub-venue">Under review at <em>Political Behavior</em>. Draft available upon request.</div>
+      <div class="pub-links">
+        <details>
+          <summary>Abs</summary>
+          <div class="pub-abstract">
+            Abstract to be added.
+          </div>
+        </details>
+      </div>
+    </div>
+  </li>
+</ol>
 
-<p><strong>Fox, A.M., and Noh, H.</strong> Let Them Eat Pets: Scapegoating and Support for Restrictive Migration Policies.</p>
-<br>
+<div class="research-section"></div>
 
-<p><strong>Lyon, M.A., Shepardson, A., Finger, L.K., Bleiberg, J., and Noh, H.</strong> How Teacher Strikes Affect School Board Elections: Evidence from Two States.</p>
+## Work in Progress
 
----
+<ol class="publication-list">
+  <li>
+    <div>
+      <div class="pub-title">How Attitudes Toward Different Welfare Policies are Shaped and Evolve</div>
+      <div class="pub-authors">Hyesang Noh</div>
+      <div class="pub-venue">Dissertation Chapter.</div>
+    </div>
+  </li>
 
-### Policy Reports
+  <li>
+    <div>
+      <div class="pub-title">Who Deserves Easier Access: Deservingness, Fiscal Constraints, and Administrative Burden for Immigrants</div>
+      <div class="pub-authors">Hyesang Noh and Ashley M. Fox</div>
+      <div class="pub-venue">Dissertation Chapter.</div>
+    </div>
+  </li>
 
-<p><strong>Hwang, H., Han, S., Noh, H., Kim, I., Jang, M., and Kim, H.</strong> (2021). A Regional Approach to Reducing Vulnerability to Emerging Infectious Diseases: Vulnerability Assessment and Smart Response Policies. The Korea Institute of Public Administration. In Korean.</p>
-<br>
+  <li>
+    <div>
+      <div class="pub-title">Voice and Power in Public Charge Rulemaking Process</div>
+      <div class="pub-authors">Hyesang Noh</div>
+      <div class="pub-venue">Dissertation Chapter.</div>
+    </div>
+  </li>
 
-<p><strong>Choi, Y., Choi, J., Kim, J., Cho, W., Noh, H., and Han, S.</strong> (2020). Social Risks and COVID-19: Cross-National Social Policy Responses: Domestic and Foreign Emergency Support Policies. Ministry of Health and Welfare, Yonsei University. In Korean.</p>
+  <li>
+    <div>
+      <div class="pub-title">State-Level Public Opinion about Immigrants and the 2016 Presidential Election</div>
+      <div class="pub-authors">Hyesang Noh, Kristen Prince, and Molly M. Reynolds</div>
+      <div class="pub-venue">In writing stage.</div>
+    </div>
+  </li>
+
+  <li>
+    <div>
+      <div class="pub-title">Let Them Eat Pets: Scapegoating and Support for Restrictive Migration Policies</div>
+      <div class="pub-authors">Ashley M. Fox and Hyesang Noh</div>
+      <div class="pub-venue">In writing stage.</div>
+    </div>
+  </li>
+
+  <li>
+    <div>
+      <div class="pub-title">How Teacher Strikes Affect School Board Elections: Evidence from Two States</div>
+      <div class="pub-authors">Melissa A. Lyon, A. Shepardson, Liam K. Finger, J. Bleiberg, and Hyesang Noh</div>
+      <div class="pub-venue">In writing stage.</div>
+    </div>
+  </li>
+</ol>
+
+<div class="research-section"></div>
+
+## Policy Reports
+
+<ol class="publication-list">
+  <li>
+    <div>
+      <div class="pub-title">A Regional Approach to Reducing Vulnerability to Emerging Infectious Diseases: Vulnerability Assessment and Smart Response Policies</div>
+      <div class="pub-authors">H. Hwang, S. Han, H. Noh, I. Kim, M. Jang, and H. Kim</div>
+      <div class="pub-venue">The Korea Institute of Public Administration, 2021. In Korean.</div>
+    </div>
+  </li>
+
+  <li>
+    <div>
+      <div class="pub-title">Social Risks and COVID-19: Cross-National Social Policy Responses: Domestic and Foreign Emergency Support Policies</div>
+      <div class="pub-authors">Y. Choi, J. Choi, J. Kim, W. Cho, H. Noh, and S. Han</div>
+      <div class="pub-venue">Ministry of Health and Welfare, Yonsei University, 2020. In Korean.</div>
+    </div>
+  </li>
+</ol>
