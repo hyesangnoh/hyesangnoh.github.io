@@ -35,7 +35,6 @@ latest_posts:
 <style>
 
 .intro-title {
-  clear: both;
   margin-bottom: 1.5rem;
 }
 
