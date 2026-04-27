@@ -2,14 +2,126 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Course materials, schedules, and resources for classes taught.
+description:
 nav: true
 nav_order: 4
-calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+<style>
+.post-title,
+.page-title,
+h1 {
+  display: none !important;
+}
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+.teaching-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
 
-{% include courses.liquid %}
+.teaching-list li {
+  margin-bottom: 1.4rem;
+}
+
+.course-title {
+  font-weight: 400;
+}
+
+.course-role {
+  margin-top: 0.15rem;
+}
+
+.course-meta {
+  margin-top: 0.15rem;
+  color: var(--global-text-color);
+}
+
+.teaching-section {
+  margin-top: 2.2rem;
+}
+
+.teaching-layout {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  column-gap: 2.5rem;
+  align-items: start;
+}
+
+.teaching-sidebar {
+  position: sticky;
+  top: 5rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.teaching-sidebar a {
+  display: block;
+  color: var(--global-text-color-light);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.teaching-sidebar a:hover,
+.teaching-sidebar a.active {
+  color: var(--global-theme-color);
+}
+
+.teaching-content h2 {
+  scroll-margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  .teaching-layout {
+    display: block;
+  }
+
+  .teaching-sidebar {
+    position: static;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 0.75rem;
+  }
+
+  .teaching-sidebar a {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+</style>
+
+<div class="teaching-layout">
+  <nav class="teaching-sidebar">
+    <a href="#teaching-assistant" class="active">Teaching Assistant</a>
+  </nav>
+
+  <div class="teaching-content">
+    <h2 id="teaching-assistant">Teaching Assistant</h2>
+
+    <ul class="teaching-list">
+      <li>
+        <div class="course-title">Introduction to Public Policy</div>
+        <div class="course-role">Guest Lecturer ("Poverty and Social Welfare Policy")</div>
+        <div class="course-meta">University at Albany, Fall 2025</div>
+      </li>
+
+      <li>
+        <div class="course-title">Introduction to Public Policy</div>
+        <div class="course-role">Discussion Section Leader/Teaching Assistant</div>
+        <div class="course-meta">University at Albany, Fall 2024/Spring 2025</div>
+      </li>
+
+      <li>
+        <div class="course-title">Modern Society and Public Administration</div>
+        <div class="course-role">Teaching Assistant</div>
+        <div class="course-meta">Yonsei University, Fall 2019/Fall 2020</div>
+      </li>
+
+      <li>
+        <div class="course-title">Comparative Public Policy</div>
+        <div class="course-role">Teaching Assistant</div>
+        <div class="course-meta">Yonsei University, Spring 2019/Spring 2020</div>
+      </li>
+    </ul>
+  </div>
+</div>
