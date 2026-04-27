@@ -21,19 +21,22 @@ h1 {
 }
 
 .teaching-list li {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.8rem;
 }
 
 .course-title {
   font-weight: 400;
+  line-height: 1.45;
 }
 
 .course-role {
   margin-top: 0.15rem;
+  line-height: 1.45;
 }
 
 .course-meta {
   margin-top: 0.15rem;
+  line-height: 1.45;
   color: var(--global-text-color);
 }
 
