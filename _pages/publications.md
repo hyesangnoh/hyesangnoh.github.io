@@ -37,48 +37,43 @@ h1 {
 }
 
 .pub-links {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: start;
-  column-gap: 0.6rem;
-  row-gap: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
   align-items: baseline;
   margin-top: 0.2rem;
   font-size: 0.9rem;
 }
 
-.pub-links details {
-  display: contents;
-}
-
-.pub-links summary {
-  display: inline;
-  cursor: pointer;
+.abs-toggle {
+  padding: 0;
+  border: 0;
+  background: none;
   color: var(--global-theme-color);
-  list-style: none;
-  grid-column: 1;
+  font: inherit;
+  cursor: pointer;
 }
 
-.pub-links summary::-webkit-details-marker {
-  display: none;
-}
-
-.pub-links summary::marker {
-  display: none;
+.abs-toggle:hover {
+  text-decoration: underline;
 }
 
 .pub-links a {
-  grid-column: 2;
   margin-left: 0;
 }
 
 .pub-abstract {
-  grid-column: 1 / -1;
-  display: block;
-  margin-top: 0.2rem;
+  display: none;
+  flex-basis: 100%;
+  width: 100%;
+  margin-top: 0.5rem;
   font-size: 0.95rem;
   line-height: 1.55;
   color: var(--global-text-color);
+}
+
+.pub-abstract.open {
+  display: block;
 }
 
 .research-section {
@@ -144,26 +139,25 @@ h1 {
     <a href="#policy-reports">Policy Reports</a>
   </nav>
 
-  <div class="research-content">
 
+
+<div class="research-content">
+  
 <h2 id="peer-reviewed-articles">Peer-Reviewed Articles</h2>
-
-
-
 
 <ul class="publication-list">
   <li>
     <div class="pub-title">Can Money Buy Trust? Social Transfer and Trust during the Pandemic</div>
     <div class="pub-authors">Noh, H., and Fox, A.M. </div>
     <div class="pub-venue"><em>Policy Studies Journal</em>, preprint, 2026</div>
+    
     <div class="pub-links">
-      <details>
-        <summary>Abs</summary>
-        <div class="pub-abstract">
-        The United States was among the countries that increased social spending the most during the pandemic, including by adopting new cash transfer schemes. Yet, little is known about the impact of these newly implemented or augmented benefits on citizen trust in public health institutions. Grounded in policy feedback literature and research on attitudinal spillover, we hypothesize that receiving social transfers during the pandemic increased trust in health institutions, with potentially heterogeneous effects across household income and political affiliation. Employing a difference-in-differences model and using the Understanding America Study dataset, we find no overall effect of receiving Stimulus Fund or SNAP benefits on trust in health institutions. However, we observe significant heterogeneity: Republicans—especially those with middle and high incomes—tend to decrease their trust after receiving the Stimulus Fund. Independents and respondents with other political affiliations also decrease trust after receiving the SNAP, although the estimates are only marginally statistically significant. Taken together, results suggest that while universalistic social policies are often believed to be broadly politically popular and generate positive feedback effects, their impacts may be limited or heterogeneous depending on political affiliation.
-        </div>
-      </details>
+      <button type="button" class="abs-toggle">Abs</button>
       <a href="https://doi.org/10.1111/psj.70112" target="_blank">DOI</a>
+
+      <div class="pub-abstract">
+        The United States was among the countries that increased social spending the most during the pandemic, including by adopting new cash transfer schemes. Yet, little is known about the impact of these newly implemented or augmented benefits on citizen trust in public health institutions. Grounded in policy feedback literature and research on attitudinal spillover, we hypothesize that receiving social transfers during the pandemic increased trust in health institutions, with potentially heterogeneous effects across household income and political affiliation. Employing a difference-in-differences model and using the Understanding America Study dataset, we find no overall effect of receiving Stimulus Fund or SNAP benefits on trust in health institutions. However, we observe significant heterogeneity: Republicans—especially those with middle and high incomes—tend to decrease their trust after receiving the Stimulus Fund. Independents and respondents with other political affiliations also decrease trust after receiving the SNAP, although the estimates are only marginally statistically significant. Taken together, results suggest that while universalistic social policies are often believed to be broadly politically popular and generate positive feedback effects, their impacts may be limited or heterogeneous depending on political affiliation.
+      </div>
     </div>
   </li>
 
@@ -171,14 +165,14 @@ h1 {
     <div class="pub-title">Diversity within Universality: Explaining Pandemic Universal Cash Transfer in East Asia</div>
     <div class="pub-authors">Choi, Y., Noh, H., Han, S., and Gentilini, U. </div>
     <div class="pub-venue"><em>International Social Security Review</em>, 77(1–2), 51–66, 2024</div>
+
     <div class="pub-links">
-      <details>
-        <summary>Abs</summary>
-        <div class="pub-abstract">
-        The response to the global COVID-19 pandemic has prompted a surge in short-term universal cash transfer programmes around the world. Notably, East Asian high-income economies have been at the forefront of these initiatives. While the innovative nature of these universal cash injections has been emphasized, there is limited documentation regarding their characteristics, prospects, and underlying motivations. This article sheds light on the domestic political and institutional processes that led to the implementation and design of universal cash transfers in Hong Kong (China), Japan, Republic of Korea, Singapore and Taiwan (China). Overall, the analysis reveals that, within the framework of universality, a nuanced, diverse and dynamic set of operational choices emerge. A range of factors shaped the adoption and evolution of these programmes, including, for example, political pressures stemming from political party competition and efforts to maintain political legitimacy. In general, design parameters are not only defined in technocratic terms, but are negotiated politically.
-        </div>
-      </details>
+      <button type="button" class="abs-toggle">Abs</button>
       <a href="https://doi.org/10.1111/issr.12355" target="_blank">DOI</a>
+
+      <div class="pub-abstract">
+        The response to the global COVID-19 pandemic has prompted a surge in short-term universal cash transfer programmes around the world. Notably, East Asian high-income economies have been at the forefront of these initiatives. While the innovative nature of these universal cash injections has been emphasized, there is limited documentation regarding their characteristics, prospects, and underlying motivations. This article sheds light on the domestic political and institutional processes that led to the implementation and design of universal cash transfers in Hong Kong (China), Japan, Republic of Korea, Singapore and Taiwan (China). Overall, the analysis reveals that, within the framework of universality, a nuanced, diverse and dynamic set of operational choices emerge. A range of factors shaped the adoption and evolution of these programmes, including, for example, political pressures stemming from political party competition and efforts to maintain political legitimacy. In general, design parameters are not only defined in technocratic terms, but are negotiated politically.
+      </div>
     </div>
   </li>
 
@@ -186,14 +180,14 @@ h1 {
     <div class="pub-title">Who Spends More to Combat COVID-19 Social Risks and Why?</div>
     <div class="pub-authors">Noh, H., Han, S., and Choi, Y.</div>
     <div class="pub-venue"><em>International Journal of Social Welfare</em>, 31(4), 392–406, 2022</div>
+
     <div class="pub-links">
-      <details>
-        <summary>Abs</summary>
-        <div class="pub-abstract">
-        COVID-19 has gone beyond a public health crisis and poses a serious threat to people's livelihoods. In response to the growing employment and income crisis, most OECD countries have introduced various policies and programs to alleviate rapidly rising social risks and stabilise people's livelihoods. However, these measures vary, with some governments spending only 1% of GDP in 2020, while others spent more than 10%. We conducted a multiple regression analysis to examine factors associated with the level of additional social spending in 31 OECD countries. The results indicate that lower generosity of unemployment benefits was associated with additional social policy spending. However, contrary to the hypothesis, higher additional spending was found among countries with higher levels of government debt. We ended with policy recommendations.
-        </div>
-      </details>
+      <button type="button" class="abs-toggle">Abs</button>
       <a href="https://doi.org/10.1111/ijsw.12535" target="_blank">DOI</a>
+
+      <div class="pub-abstract">
+        COVID-19 has gone beyond a public health crisis and poses a serious threat to people's livelihoods. In response to the growing employment and income crisis, most OECD countries have introduced various policies and programs to alleviate rapidly rising social risks and stabilise people's livelihoods. However, these measures vary, with some governments spending only 1% of GDP in 2020, while others spent more than 10%. We conducted a multiple regression analysis to examine factors associated with the level of additional social spending in 31 OECD countries. The results indicate that lower generosity of unemployment benefits was associated with additional social policy spending. However, contrary to the hypothesis, higher additional spending was found among countries with higher levels of government debt. We ended with policy recommendations.
+      </div>
     </div>
   </li>
 </ul>
@@ -289,6 +283,17 @@ h1 {
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll(".research-content h2[id]");
   const navLinks = document.querySelectorAll(".research-sidebar a");
+  const absButtons = document.querySelectorAll(".abs-toggle");
+
+  absButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const abstract = button.parentElement.querySelector(".pub-abstract");
+
+      if (abstract) {
+        abstract.classList.toggle("open");
+      }
+    });
+  });
 
   function setActiveLink() {
     let currentSectionId = sections[0]?.id;
@@ -296,10 +301,17 @@ document.addEventListener("DOMContentLoaded", function () {
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
 
-      if (rect.top <= 120) {
+      if (rect.top <= 140) {
         currentSectionId = section.id;
       }
     });
+
+    const nearBottom =
+      window.innerHeight + window.scrollY >= document.body.offsetHeight - 20;
+
+    if (nearBottom && sections.length > 0) {
+      currentSectionId = sections[sections.length - 1].id;
+    }
 
     navLinks.forEach((link) => {
       const href = link.getAttribute("href");
