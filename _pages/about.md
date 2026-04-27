@@ -1,13 +1,38 @@
+---
+layout: about
+title: About
+permalink: /
+subtitle:
+
+profile:
+  align: left
+  image: prof_pic.jpg
+  image_circular: false
+  more_info: >
+    <p class="profile-icons">
+      <a href="mailto:hnoh2@albany.edu" title="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://scholar.google.com/citations?hl=en&user=VAMvWPMAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </p>
+
+selected_papers: false
+social: false
+
+announcements:
+  enabled: false
+  scrollable: true
+  limit: 5
+
+latest_posts:
+  enabled: false
+  scrollable: true
+  limit: 3
+---
+
 <style>
-.intro-title {
-  margin-bottom: 1.5rem;
-}
-
-.intro-title h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0;
-}
-
 .post-title {
   display: none;
 }
@@ -21,7 +46,7 @@
 .profile img {
   width: 220px !important;
   height: auto !important;
-  max-width: none !important;
+  max-width: 220px !important;
   object-fit: contain !important;
   border-radius: 0.25rem;
 }
@@ -46,9 +71,17 @@
   color: var(--global-hover-color);
 }
 
-/* Keep all text to the right of the photo */
 .about-text {
   margin-left: 270px;
+}
+
+.intro-title {
+  margin-bottom: 1.5rem;
+}
+
+.intro-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
