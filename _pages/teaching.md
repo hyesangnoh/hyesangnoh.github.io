@@ -95,11 +95,12 @@ h1 {
 
 <div class="teaching-layout">
   <nav class="teaching-sidebar">
-    <a href="#teaching-assistant" class="active">Teaching Assistant</a>
+    <a href="#guest-lecturer">Guest Lecturer</a>
+    <a href="#teaching-assistant">Teaching Assistant</a>
   </nav>
 
   <div class="teaching-content">
-    <h2 id="teaching-assistant">Teaching Assistant</h2>
+    <h2 id="guest-lecturer">Guest Lecturer</h2>
 
     <ul class="teaching-list">
       <li>
@@ -107,7 +108,11 @@ h1 {
         <div class="course-role">Guest Lecturer ("Poverty and Social Welfare Policy")</div>
         <div class="course-meta">University at Albany, Fall 2025</div>
       </li>
+    </ul>
 
+    <h2 id="teaching-assistant" class="teaching-section">Teaching Assistant</h2>
+
+    <ul class="teaching-list">
       <li>
         <div class="course-title">Introduction to Public Policy</div>
         <div class="course-role">Discussion Section Leader/Teaching Assistant</div>
@@ -128,3 +133,35 @@ h1 {
     </ul>
   </div>
 </div>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".teaching-content h2[id]");
+  const navLinks = document.querySelectorAll(".teaching-sidebar a");
+
+  function updateActiveSection() {
+    let currentSection = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 120;
+
+      if (window.scrollY >= sectionTop) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+
+      if (link.getAttribute("href") === "#" + currentSection) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", updateActiveSection);
+  updateActiveSection();
+});
+</script>
