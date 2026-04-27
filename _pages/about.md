@@ -48,10 +48,11 @@ latest_posts:
 }
 
 .profile img {
-  width: auto !important;
+  width: 250px !important;
   height: auto !important;
   max-width: 100% !important;
   object-fit: contain !important;
+  border-radius: 0.25rem;
 }
 
 .profile .more-info {
@@ -64,8 +65,8 @@ latest_posts:
 }
 
 .profile .more-info .profile-icons a {
-  font-size: 0.85rem;
-  margin: 0 0.25rem;
+  font-size: 1.2rem;
+  margin: 0 0.45rem;
   color: var(--global-theme-color);
   text-decoration: none;
 }
@@ -81,12 +82,26 @@ latest_posts:
 
 <p>
   
-    I am a PhD candidate at the University at Albany, where I study public administration and policy. This website is still developing as I learn how to manage it.
+I am a PhD candidate at the University at Albany, where I study public administration and policy. 
 
 </p>
 
 <p>
 
-    My research interests include the social construction of policy targets, policymaking, and the design of social policy.
+My research interests include the policy process and policy design, the social construction of policy target populations, and social policy. My dissertation, titled “Contesting Inclusion: The Politics and Policy of Immigration and the Welfare State,” examines how the social construction of policy target populations shapes attitudes toward policy design, tolerance for administrative burdens, and political participation in administrative rulemaking processes.
 
 </p>
+
+<p>
+
+Beyond my dissertation, I study how social policies change and how those changes generate new political dynamics. I have examined social policy changes during the pandemic, particularly the shift toward more universal cash transfer policies and their political impacts. I also study the political attitudes and behaviors that shape redistribution more broadly.
+
+</p>
+
+
+
+
+
+
+
+
