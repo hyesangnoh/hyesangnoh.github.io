@@ -25,7 +25,7 @@ h1 {
 }
 
 .pub-title {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .pub-authors {
