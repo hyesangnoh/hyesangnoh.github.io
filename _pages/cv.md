@@ -1,13 +1,22 @@
 ---
 layout: page
 permalink: /cv/
-title: Curriculum Vitae
+title: CV
 nav: true
-nav_title: CV
 nav_order: 5
-description: Updated May 2026
-
+description:
 ---
+
+<style>
+  .post-title {
+    display: none;
+  }
+</style>
+
+<h1>Curriculum Vitae</h1>
+<p style="font-size: 0.95rem; margin-top: -0.5rem; margin-bottom: 2rem;">
+  Updated May 2026
+</p>
 
 <iframe
   src="{{ '/assets/pdf/cv.pdf#toolbar=1&navpanes=0&pagemode=none&view=FitH' | relative_url }}"
