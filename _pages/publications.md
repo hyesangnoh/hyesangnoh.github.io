@@ -7,6 +7,13 @@ nav_order: 3
 ---
 
 <style>
+
+.post-title,
+.page-title,
+h1 {
+  display: none !important;
+}
+  
 .publication-list {
   list-style: none;
   padding-left: 0;
@@ -69,9 +76,70 @@ nav_order: 3
 .research-section {
   margin-top: 2.2rem;
 }
+
+.research-layout {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  column-gap: 2.5rem;
+  align-items: start;
+}
+
+.research-sidebar {
+  position: sticky;
+  top: 5rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.research-sidebar a {
+  display: block;
+  color: var(--global-text-color-light);
+  text-decoration: none;
+}
+
+.research-sidebar a:hover {
+  color: var(--global-theme-color);
+}
+
+.research-content h2 {
+  scroll-margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  .research-layout {
+    display: block;
+  }
+
+  .research-sidebar {
+    position: static;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 0.75rem;
+  }
+
+  .research-sidebar a {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
 </style>
 
-## Peer-Reviewed Articles
+
+
+<div class="research-layout">
+  <nav class="research-sidebar">
+    <a href="#peer-reviewed-articles">Peer-Reviewed Articles</a>
+    <a href="#working-papers">Working Papers</a>
+    <a href="#work-in-progress">Work in Progress</a>
+    <a href="#policy-reports">Policy Reports</a>
+  </nav>
+
+  <div class="research-content">
+
+<h2 id="peer-reviewed-articles">Peer-Reviewed Articles</h2>
+
+
+
 
 <ul class="publication-list">
   <li>
@@ -122,12 +190,15 @@ nav_order: 3
 
 <div class="research-section"></div>
 
-## Working Papers
+
+
+
+<h2 id="working-papers">Working Papers</h2>
 
 <ul class="publication-list">
   <li>
     <div class="pub-title">Immigrant Inclusion and Hispanic/Latino Health: The Moderating Role of Co-Ethnic Concentration</div>
-    <div class="pub-authors">Reynolds, M., Noh, H., and Riosmena, F.</div>
+    <div class="pub-authors">Reynolds, M.M., Noh, H., and Riosmena, F.</div>
   </li>
 
   <li>
@@ -143,7 +214,10 @@ nav_order: 3
 
 <div class="research-section"></div>
 
-## Work in Progress
+
+
+
+<h2 id="work-in-progress">Work in Progress</h2>
 
 <ul class="publication-list">
   <li>
@@ -152,7 +226,7 @@ nav_order: 3
 
   <li>
     <div class="pub-title">Who Deserves Easier Access: Deservingness, Fiscal Constraints, and Administrative Burden for Immigrants</div>
-    <div class="pub-authors">with Fox, A. M.</div>
+    <div class="pub-authors">with Fox, A.M.</div>
   </li>
 
   <li>
@@ -161,7 +235,7 @@ nav_order: 3
 
   <li>
     <div class="pub-title">State-Level Public Opinion about Immigrants and the 2016 Presidential Election</div>
-    <div class="pub-authors">with Noh Reynolds, M. M, and Prince, K.</div>
+    <div class="pub-authors">with Reynolds, M.M, and Prince, K.</div>
   </li>
 
   <li>
@@ -177,7 +251,10 @@ nav_order: 3
 
 <div class="research-section"></div>
 
-## Policy Reports
+
+
+
+<h2 id="policy-reports">Policy Reports</h2>
 
 <ul class="publication-list">
   <li>
@@ -192,3 +269,6 @@ nav_order: 3
     <div class="pub-venue">Ministry of Health and Welfare, Yonsei University, 2020. In Korean.</div>
   </li>
 </ul>
+
+  </div>
+</div>
