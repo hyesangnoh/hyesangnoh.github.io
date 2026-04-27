@@ -236,21 +236,6 @@ h1 {
   <li>
     <div class="pub-title">Voice and Power in Public Charge Rulemaking Process</div>
   </li>
-
-  <li>
-    <div class="pub-title">State-Level Public Opinion about Immigrants and the 2016 Presidential Election</div>
-    <div class="pub-authors">with Reynolds, M.M, and Prince, K.</div>
-  </li>
-
-  <li>
-    <div class="pub-title">Let Them Eat Pets: Scapegoating and Support for Restrictive Migration Policies</div>
-    <div class="pub-authors">with Fox, A.M.</div>
-  </li>
-
-  <li>
-    <div class="pub-title">How Teacher Strikes Affect School Board Elections: Evidence from Two States</div>
-    <div class="pub-authors">with Lyon, M.A., Shepardson, A., Finger, L.K., Bleiberg, J.</div>
-  </li>
 </ul>
 
 <div class="research-section"></div>
