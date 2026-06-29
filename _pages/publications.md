@@ -206,7 +206,7 @@ COVID-19 has gone beyond a public health crisis and poses a serious threat to pe
 
 <ul class="publication-list">
   <li>
-    Fox, A. M., &amp; <strong><em>Noh, H.</em></strong>. “Universal” health coverage: Does inclusion of divisive groups reduce support for universalistic welfare policy? (Revise and resubmit at <em>Journal of Public Policy</em>).
+    Fox, A. M., &amp; <strong><em>Noh, H.</em></strong> “Universal” health coverage: Does inclusion of divisive groups reduce support for universalistic welfare policy? (Revise and resubmit at <em>Journal of Public Policy</em>).
 
     <div class="pub-links">
       <button type="button" class="abs-toggle">Abstract</button>
@@ -218,7 +218,7 @@ COVID-19 has gone beyond a public health crisis and poses a serious threat to pe
   </li>
 
   <li>
-    Lyon, M. A., Finger, L. K., &amp; <strong><em>Noh, H.</em></strong>. Teacher strikes and the demobilization of Republican voters. (Revise and resubmit at <em>Political Behavior</em>).
+    Lyon, M. A., Finger, L. K., &amp; <strong><em>Noh, H.</em></strong> Teacher strikes and the demobilization of Republican voters. (Revise and resubmit at <em>Political Behavior</em>).
 
     <div class="pub-links">
       <button type="button" class="abs-toggle">Abstract</button>
