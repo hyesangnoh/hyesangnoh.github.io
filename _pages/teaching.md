@@ -1,8 +1,8 @@
+```html
 ---
 layout: page
 permalink: /teaching/
 title: Teaching
-description:
 nav: true
 nav_order: 4
 ---
@@ -12,36 +12,6 @@ nav_order: 4
 .page-title,
 h1 {
   display: none !important;
-}
-
-.teaching-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 1rem;
-}
-
-.teaching-list li {
-  margin-bottom: 1.8rem;
-}
-
-.course-title {
-  font-weight: 400;
-  line-height: 1.45;
-}
-
-.course-role {
-  margin-top: 0.15rem;
-  line-height: 1.45;
-}
-
-.course-meta {
-  margin-top: 0.15rem;
-  line-height: 1.45;
-  color: var(--global-text-color);
-}
-
-.teaching-section {
-  margin-top: 2.2rem;
 }
 
 .teaching-layout {
@@ -54,7 +24,7 @@ h1 {
 .teaching-sidebar {
   position: sticky;
   top: 5rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.8;
 }
 
@@ -70,8 +40,36 @@ h1 {
   color: var(--global-theme-color);
 }
 
+.teaching-content {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 .teaching-content h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 2.2rem;
+  margin-bottom: 0.9rem;
   scroll-margin-top: 5rem;
+}
+
+.teaching-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.teaching-list li {
+  margin-bottom: 0.75rem;
+}
+
+.course-title {
+  font-weight: 400;
+}
+
+.course-info {
+  color: var(--global-text-color);
 }
 
 @media (max-width: 768px) {
@@ -93,75 +91,87 @@ h1 {
 }
 </style>
 
+
 <div class="teaching-layout">
-  <nav class="teaching-sidebar">
-    <a href="#guest-lecturer">Guest Lecturer</a>
-    <a href="#teaching-assistant">Teaching Assistant</a>
-  </nav>
 
-  <div class="teaching-content">
-    <h2 id="guest-lecturer">Guest Lecturer</h2>
+<nav class="teaching-sidebar">
+  <a href="#instructor">Instructor</a>
+  <a href="#teaching-assistant">Teaching Assistant</a>
+  <a href="#guest-lectures">Guest Lectures</a>
+</nav>
 
-    <ul class="teaching-list">
-      <li>
-        <div class="course-title">Introduction to Public Policy</div>
-        <div class="course-role">Guest Lecturer ("Poverty and Social Welfare Policy")</div>
-        <div class="course-meta">University at Albany, Fall 2025</div>
-      </li>
-    </ul>
+<div class="teaching-content">
 
-    <h2 id="teaching-assistant" class="teaching-section">Teaching Assistant</h2>
+<h2 id="instructor">Instructor</h2>
 
-    <ul class="teaching-list">
-      <li>
-        <div class="course-title">Introduction to Public Policy</div>
-        <div class="course-role">Discussion Section Leader/Teaching Assistant</div>
-        <div class="course-meta">University at Albany, Fall 2024/Spring 2025</div>
-      </li>
+<ul class="teaching-list">
+  <li>
+    <span class="course-title">Course Title</span>. University at Albany, Semester Year.
+  </li>
+</ul>
 
-      <li>
-        <div class="course-title">Modern Society and Public Administration</div>
-        <div class="course-role">Teaching Assistant</div>
-        <div class="course-meta">Yonsei University, Fall 2019/Fall 2020</div>
-      </li>
 
-      <li>
-        <div class="course-title">Comparative Public Policy</div>
-        <div class="course-role">Teaching Assistant</div>
-        <div class="course-meta">Yonsei University, Spring 2019/Spring 2020</div>
-      </li>
-    </ul>
-  </div>
+<h2 id="teaching-assistant">Teaching Assistant</h2>
+
+<ul class="teaching-list">
+  <li>
+    <span class="course-title">Course Title</span>. University at Albany, Semester Year.
+  </li>
+
+  <li>
+    <span class="course-title">Course Title</span>. University at Albany, Semester Year.
+  </li>
+</ul>
+
+
+<h2 id="guest-lectures">Guest Lectures</h2>
+
+<ul class="teaching-list">
+  <li>
+    <span class="course-title">Lecture Title</span>. Course Title, University at Albany, Semester Year.
+  </li>
+</ul>
+
 </div>
 
-
+</div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll(".teaching-content h2[id]");
   const navLinks = document.querySelectorAll(".teaching-sidebar a");
 
-  function updateActiveSection() {
-    let currentSection = "";
+  function setActiveLink() {
+    let currentSectionId = sections[0]?.id;
 
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 120;
+      const rect = section.getBoundingClientRect();
 
-      if (window.scrollY >= sectionTop) {
-        currentSection = section.getAttribute("id");
+      if (rect.top <= 140) {
+        currentSectionId = section.id;
       }
     });
 
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
+    const nearBottom =
+      window.innerHeight + window.scrollY >= document.body.offsetHeight - 20;
 
-      if (link.getAttribute("href") === "#" + currentSection) {
+    if (nearBottom && sections.length > 0) {
+      currentSectionId = sections[sections.length - 1].id;
+    }
+
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+
+      if (href === `#${currentSectionId}`) {
         link.classList.add("active");
+      } else {
+        link.classList.remove("active");
       }
     });
   }
 
-  window.addEventListener("scroll", updateActiveSection);
-  updateActiveSection();
+  setActiveLink();
+  window.addEventListener("scroll", setActiveLink);
 });
 </script>
+```
