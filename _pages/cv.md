@@ -23,6 +23,7 @@ description:
     font-size: 0.9rem;
     margin-top: 0;
     margin-bottom: 1rem;
+    text-align: center;
   }
 </style>
 
