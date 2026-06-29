@@ -8,19 +8,33 @@ description:
 ---
 
 <style>
-  .post-title {
-    display: none;
+  .post-title,
+  .page-title,
+  h1 {
+    display: none !important;
+  }
+
+  .cv-frame {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .cv-updated {
+    font-size: 0.9rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
   }
 </style>
 
-<h1>Curriculum Vitae</h1>
-<p style="font-size: 0.95rem; margin-top: -0.5rem; margin-bottom: 2rem;">
-  Updated May 2026
+<p class="cv-updated">
+  Updated June 2026
 </p>
 
-<iframe
-  src="{{ '/assets/pdf/cv.pdf#toolbar=1&navpanes=0&pagemode=none&view=FitH' | relative_url }}"
-  width="100%"
-  height="900px"
-  style="border: none;">
-</iframe>
+<div class="cv-frame">
+  <iframe
+    src="{{ '/assets/pdf/cv.pdf#toolbar=1&navpanes=0&pagemode=none&view=FitH' | relative_url }}"
+    width="100%"
+    height="850px"
+    style="border: none;">
+  </iframe>
+</div>
