@@ -142,7 +142,7 @@ h1 {
 
 <nav class="research-sidebar">
   <a href="#peer-reviewed-articles">Peer-Reviewed Articles</a>
-  <a href="#manuscript-under-review">Manuscript Under Review</a>
+  <a href="#manuscript-under-review">Under Review</a>
   <a href="#work-in-progress">Work in Progress</a>
   <a href="#policy-reports">Policy Reports</a>
 </nav>
@@ -207,16 +207,41 @@ COVID-19 has gone beyond a public health crisis and poses a serious threat to pe
 <ul class="publication-list">
   <li>
     Fox, A. M., &amp; <strong><em>Noh, H.</em></strong>. “Universal” health coverage: Does inclusion of divisive groups reduce support for universalistic welfare policy? (Revise and resubmit at <em>Journal of Public Policy</em>).
+
+    <div class="pub-links">
+      <button type="button" class="abs-toggle">Abstract</button>
+
+    <div class="pub-abstract"> 
+    Does the inclusion of outgroups reduce support for universalistic welfare policy? A long literature has examined how diversity undermines support for the welfare state. Less research has looked specifically at how the inclusion of outgroups affects support for universalistic programs that make exclusion difficult. We undertake a survey experiment with a panel of 1,000 respondents to test whether providing information about who will be included (immigrants and transgender youth) in universalistic programs (Medicare for All, M4A) decreases policy support. We find that introducing information that immigrants will receive benefits reduces support for M4A by 7 pp (p<0.05) for the immigrant arm and 6 pp (p<0.10) for the transgender youth arm. We further show that treatment effects are heterogeneous across political affiliations, with the inclusion of immigrants decreasing Republicans’ support by 11 pp (p<0.05). Overall, messages emphasizing universal shared benefits for all appear to enjoy the most popularity in line with the solidarity hypothesis.
+      </div>
+    </div>
   </li>
 
   <li>
     Lyon, M. A., Finger, L. K., &amp; <strong><em>Noh, H.</em></strong>. Teacher strikes and the demobilization of Republican voters. (Revise and resubmit at <em>Political Behavior</em>).
+
+    <div class="pub-links">
+      <button type="button" class="abs-toggle">Abstract</button>
+
+      <div class="pub-abstract">
+      Approximately 500,000 workers participated in large-scale strikes annually in 2018, 2019, and 2023. Strikes are not just work stoppages but are also forms of protest. Like other forms of protest, they can engender support or backlash among bystanders, shaping their behavior at the ballot box. We use an original dataset of 655 teacher strikes from 2007-2020 to test competing theories about the effects of strikes on the political participation of local community members exposed to strikes. We find that teacher strikes decrease localized voter turnout, with substantially larger effects among Republicans (-3 percentage points) than Democrats (-1 percentage points). We further demonstrate that strikes are most demobilizing for parents, particularly Republican parents. The proximity and duration of strikes also matter, with closer or longer strikes having a larger demobilizing effect. These effects are driven by reduced political efficacy related to both a decrease in support for teacher demands and in political interest. This research demonstrates the value of extending insights from studies of political efficacy to understand broad societal impacts of protests.
+      </div>
+    </div>
   </li>
 
   <li>
     Reynolds, M. M., <strong><em>Noh, H.</em></strong>, &amp; Riosmena, F. County co-ethnic concentration, state immigration policies, and Hispanic/Latino health. (Revise and resubmit at <em>Population Research and Policy Review</em>).
+
+    <div class="pub-links">
+      <button type="button" class="abs-toggle">Abstract</button>
+
+      <div class="pub-abstract">
+      The impact of co-ethnic communities on health outcomes has been widely studied, though findings remain contested. Most studies point to a strong “barrio effect” for Latinos, especially those who were foreign-born, living closer to other Latinos. In this paper, we extend our understanding of the impact of co-ethnic communities beyond immediate neighborhoods by investigating the association between Hispanic/Latino (H/L) health and the county-level density of both all and foreign-born co-ethnics. We further contribute to the literature by examining whether these associations are moderated by existing levels of co-ethnic density or by state-level immigrant policy environments. We use data from roughly 1,000 counties from the Robert Wood Johnson Foundation County Health Rankings to examine three key measures–low birth weight, premature death, and preventable hospitalizations. We merge these data with information on H/L and foreign-born H/L population density and a state-level Immigration Policy Climate Index. Random effects models suggest that the relationship between county-level H/L and foreign-born H/L population and population health is starkly non-linear. We find in the case of foreign-born density, the association with population health remains favorable but is weaker in high-density counties compared to low-density counties; in the case of H/L density, the favorable association with population health is reversed such that increases in density are associated with worse population health. Contrary to expectation, we find no significant moderating effects of state-level immigrant policy environments on the density-health relationship.
+      </div>
+    </div>
   </li>
 </ul>
+
 
 <h2 id="work-in-progress">Work in Progress</h2>
 
