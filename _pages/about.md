@@ -111,7 +111,7 @@ Hello, and welcome to my website! I am a PhD candidate in Public Administration 
 </p>
 
 <p>
-My research focuses on when and how social policies change. My dissertation, titled "Contesting Inclusion: The Politics of Policy of Immigration and the Welfare State," examines how the social construction of policy target populations shapes attitudes toward policy design, acceptance of administrative burdens, and political participation in the administrative rulemaking process. 
+My research focuses on when and how social policies change. My dissertation, titled "Contesting Inclusion: The Politics and Policy of Immigration and the Welfare State," examines how the social construction of policy target populations shapes attitudes toward policy design, acceptance of administrative burdens, and political participation in the administrative rulemaking process. 
 </p>
 
 <p>
