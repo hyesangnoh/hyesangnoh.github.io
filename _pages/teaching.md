@@ -1,8 +1,8 @@
-```html
 ---
 layout: page
 permalink: /teaching/
 title: Teaching
+description:
 nav: true
 nav_order: 4
 ---
@@ -12,6 +12,37 @@ nav_order: 4
 .page-title,
 h1 {
   display: none !important;
+}
+
+.teaching-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.teaching-list li {
+  margin-bottom: 0.75rem;
+}
+
+.course-title,
+.course-role,
+.course-meta {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--global-text-color);
+}
+
+.course-title {
+  font-weight: 400;
+}
+
+.course-role,
+.course-meta {
+  margin-top: 0;
+}
+
+.teaching-section {
+  margin-top: 2.2rem;
 }
 
 .teaching-layout {
@@ -54,24 +85,6 @@ h1 {
   scroll-margin-top: 5rem;
 }
 
-.teaching-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-}
-
-.teaching-list li {
-  margin-bottom: 0.75rem;
-}
-
-.course-title {
-  font-weight: 400;
-}
-
-.course-info {
-  color: var(--global-text-color);
-}
-
 @media (max-width: 768px) {
   .teaching-layout {
     display: block;
@@ -88,90 +101,80 @@ h1 {
     display: inline-block;
     margin-right: 1rem;
   }
-}
+} 
+
+
 </style>
 
-
 <div class="teaching-layout">
+  <nav class="teaching-sidebar">
+    <a href="#guest-lecturer">Guest Lecturer</a>
+    <a href="#teaching-assistant">Teaching Assistant</a>
+  </nav>
 
-<nav class="teaching-sidebar">
-  <a href="#instructor">Instructor</a>
-  <a href="#teaching-assistant">Teaching Assistant</a>
-  <a href="#guest-lectures">Guest Lectures</a>
-</nav>
+  <div class="teaching-content">
+    <h2 id="guest-lecturer">Guest Lecturer</h2>
 
-<div class="teaching-content">
+    <ul class="teaching-list">
+      <li>
+        <div class="course-title">Introduction to Public Policy</div>
+        <div class="course-role">Guest Lecturer ("Poverty and Social Welfare Policy")</div>
+        <div class="course-meta">University at Albany, Fall 2025</div>
+      </li>
+    </ul>
 
-<h2 id="instructor">Instructor</h2>
+    <h2 id="teaching-assistant" class="teaching-section">Teaching Assistant</h2>
 
-<ul class="teaching-list">
-  <li>
-    <span class="course-title">Course Title</span>. University at Albany, Semester Year.
-  </li>
-</ul>
+    <ul class="teaching-list">
+      <li>
+        <div class="course-title">Introduction to Public Policy</div>
+        <div class="course-role">Discussion Section Leader/Teaching Assistant</div>
+        <div class="course-meta">University at Albany, Fall 2024/Spring 2025</div>
+      </li>
 
+      <li>
+        <div class="course-title">Modern Society and Public Administration</div>
+        <div class="course-role">Teaching Assistant</div>
+        <div class="course-meta">Yonsei University, Fall 2019/Fall 2020</div>
+      </li>
 
-<h2 id="teaching-assistant">Teaching Assistant</h2>
-
-<ul class="teaching-list">
-  <li>
-    <span class="course-title">Course Title</span>. University at Albany, Semester Year.
-  </li>
-
-  <li>
-    <span class="course-title">Course Title</span>. University at Albany, Semester Year.
-  </li>
-</ul>
-
-
-<h2 id="guest-lectures">Guest Lectures</h2>
-
-<ul class="teaching-list">
-  <li>
-    <span class="course-title">Lecture Title</span>. Course Title, University at Albany, Semester Year.
-  </li>
-</ul>
-
+      <li>
+        <div class="course-title">Comparative Public Policy</div>
+        <div class="course-role">Teaching Assistant</div>
+        <div class="course-meta">Yonsei University, Spring 2019/Spring 2020</div>
+      </li>
+    </ul>
+  </div>
 </div>
 
-</div>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll(".teaching-content h2[id]");
   const navLinks = document.querySelectorAll(".teaching-sidebar a");
 
-  function setActiveLink() {
-    let currentSectionId = sections[0]?.id;
+  function updateActiveSection() {
+    let currentSection = "";
 
     sections.forEach((section) => {
-      const rect = section.getBoundingClientRect();
+      const sectionTop = section.offsetTop - 120;
 
-      if (rect.top <= 140) {
-        currentSectionId = section.id;
+      if (window.scrollY >= sectionTop) {
+        currentSection = section.getAttribute("id");
       }
     });
 
-    const nearBottom =
-      window.innerHeight + window.scrollY >= document.body.offsetHeight - 20;
-
-    if (nearBottom && sections.length > 0) {
-      currentSectionId = sections[sections.length - 1].id;
-    }
-
     navLinks.forEach((link) => {
-      const href = link.getAttribute("href");
+      link.classList.remove("active");
 
-      if (href === `#${currentSectionId}`) {
+      if (link.getAttribute("href") === "#" + currentSection) {
         link.classList.add("active");
-      } else {
-        link.classList.remove("active");
       }
     });
   }
 
-  setActiveLink();
-  window.addEventListener("scroll", setActiveLink);
+  window.addEventListener("scroll", updateActiveSection);
+  updateActiveSection();
 });
 </script>
-```
