@@ -32,10 +32,15 @@ description:
 </p>
 
 <div class="cv-frame">
-  <iframe
-    src="{{ '/assets/pdf/cv.pdf#toolbar=1&navpanes=0&pagemode=none&view=FitH' | relative_url }}"
+  <object
+    data="{{ '/assets/pdf/cv.pdf' | relative_url }}"
+    type="application/pdf"
     width="100%"
-    height="850px"
-    style="border: none;">
-  </iframe>
+    height="850px">
+    <p>
+      <a href="{{ '/assets/pdf/cv.pdf' | relative_url }}">
+        View my CV
+      </a>
+    </p>
+  </object>
 </div>
