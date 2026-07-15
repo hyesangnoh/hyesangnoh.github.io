@@ -94,8 +94,10 @@ latest_posts:
   }
 
   .profile img {
+    display: block !important;
     width: 220px !important;
     max-width: 80% !important;
+    margin: 0 auto !important;
   }
 
   .about-text {
