@@ -130,18 +130,21 @@ h1 {
         <div class="course-title">Introduction to Public Policy</div>
         <div class="course-role">Discussion Section Leader/Teaching Assistant</div>
         <div class="course-meta">University at Albany, Fall 2024/Spring 2025</div>
+        <div class="course-description">Duties included leading 2–3 weekly discussion sections of 15 students each; guiding students in writing policy memos; grading assignments; and advising student teams on presentations </div>
       </li>
 
       <li>
         <div class="course-title">Modern Society and Public Administration</div>
         <div class="course-role">Teaching Assistant</div>
         <div class="course-meta">Yonsei University, Fall 2019/Fall 2020</div>
+        <div class="course-description">Duties included communicating with students about course-related issues; proctoring exams; and organizing class materials </div>
       </li>
 
       <li>
         <div class="course-title">Comparative Public Policy</div>
         <div class="course-role">Teaching Assistant</div>
         <div class="course-meta">Yonsei University, Spring 2019/Spring 2020</div>
+        <div class="course-description">Duties included communicating with students about course-related issues; proctoring exams; and organizing class materials </div>
       </li>
     </ul>
   </div>
