@@ -28,7 +28,7 @@ description:
 </style>
 
 <p class="cv-updated">
-  Updated June 2026
+  Updated July 2026
 </p>
 
 <div class="cv-frame">
