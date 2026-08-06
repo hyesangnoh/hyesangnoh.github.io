@@ -120,11 +120,14 @@ Hello, and welcome to my website! I am a PhD candidate in Public Administration 
 </p>
 
 <p>
-My research focuses on when and how social policies change. My dissertation, titled "Contesting Inclusion: The Politics and Policy of Immigration and the Welfare State," examines how the social construction of policy target populations shapes attitudes toward policy design, acceptance of administrative burdens, and political participation in the administrative rulemaking process. 
+My research focuses on when and how social policies change, including through administrative processes. My dissertation, titled "Contesting Inclusion: The Politics and Policy of Immigration and the Welfare State," examines how the social construction of policy target populations shapes attitudes toward policy design, acceptance of administrative burdens, and political participation in the administrative rulemaking process. 
 </p>
 
 <p>
-In other work, I have examined social policy changes during the COVID-19 pandemic, particularly the shift toward more universal social policies and its political consequences. More broadly, I also study the political attitudes and behavior that shape redistribution.
+In other work, I have examined social policy changes during the COVID-19 pandemic, particularly the shift toward more universal social policies and its political consequences. More broadly, I study the political attitudes and behaviors that shape redistribution. You can find my current working papers on the <a href="/research/">Research page</a>. My work has been published in or is forthcoming in <em>Policy Studies Journal</em>, <em>International Journal of Social Welfare</em>, and <em>International Social Security Review</em>. </p>
+
+<p>
+Please feel free to contact me at <a href="mailto:hnoh2@albany.edu">hnoh2@albany.edu</a>.
 </p>
 
 </div>
