@@ -44,13 +44,20 @@ latest_posts:
 }
 
 .profile img {
+  display: block !important;
   width: 220px !important;
   height: auto !important;
   max-width: 220px !important;
-  object-fit: contain !important;
-  border-radius: 0.25rem;
-}
 
+  object-fit: contain !important;
+
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+  
 .profile .more-info {
   text-align: center;
   margin-top: 0.35rem;
