@@ -82,6 +82,14 @@ h1 {
   margin-top: 0;
 }
 
+.pub-award {
+  margin-top: 0.15rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.88em;
+  color: #666;
+  line-height: 1.4;
+}
+
 .pub-links {
   display: flex;
   flex-wrap: wrap;
@@ -158,7 +166,7 @@ h1 {
   <strong><em>Noh, H.</em></strong>, &amp; Fox, A. M. (2026). Can money buy trust? Social transfer and trust during the pandemic. <em>Policy Studies Journal</em>, Article e70112. Advance online publication.
 
   <div class="pub-award">
-    Recipient, Outstanding Candidacy Paper Award, University at Albany, SUNY.
+    Outstanding Candidacy Paper Award, University at Albany, SUNY
   </div>
 
   <div class="pub-links">
