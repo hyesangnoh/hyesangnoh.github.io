@@ -157,6 +157,10 @@ h1 {
 <li>
   <strong><em>Noh, H.</em></strong>, &amp; Fox, A. M. (2026). Can money buy trust? Social transfer and trust during the pandemic. <em>Policy Studies Journal</em>, Article e70112. Advance online publication.
 
+  <div class="pub-award">
+    Recipient, Outstanding Candidacy Paper Award, University at Albany, SUNY.
+  </div>
+
   <div class="pub-links">
     <button type="button" class="abs-toggle">Abstract</button>
     <span>|</span>
