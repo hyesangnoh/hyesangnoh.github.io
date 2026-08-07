@@ -271,15 +271,15 @@ COVID-19 has gone beyond a public health crisis and poses a serious threat to pe
   </li>
 
   <li>
-    State-level public opinion about immigrants and the 2016 presidential election, with Reynolds, M. M., &amp; Prince, K.
+    State-level public opinion about immigrants and the 2016 presidential election, with Reynolds, M. M., &amp; Prince, K. (Manuscript in preparation)
   </li>
 
   <li>
-    Let them eat pets: Scapegoating and support for restrictive migration policies, with Fox, A. M.
+    Let them eat pets: Scapegoating and support for restrictive migration policies, with Fox, A. M. (Manuscript in preparation)
   </li>
 
   <li>
-    How teacher strikes affect school board elections: Evidence from two states, with Lyon, M. A., Shepardson, A., Finger, L. K., &amp; Bleiberg, J.
+    How teacher strikes affect school board elections: Evidence from two states, with Lyon, M. A., Shepardson, A., Finger, L. K., &amp; Bleiberg, J. (Analysis in progress)
   </li>
 </ul>
 
